@@ -880,9 +880,9 @@ function _formatHtml(html, htmlTags, urlType, wellFormatted, indentChar) {
 				attr += ' ' + key + '="' + val + '"';
 			});
 		}
-		if (tagName === 'font') {
-			tagName = 'span';
-		}
+		//if (tagName === 'font') {
+		//	tagName = 'span';
+		//}
 		return startNewline + '<' + startSlash + tagName + attr + endSlash + '>' + endNewline;
 	});
 	html = html.replace(/(<(?:pre|pre\s[^>]*)>)([\s\S]*?)(<\/pre>)/ig, function($0, $1, $2, $3) {
