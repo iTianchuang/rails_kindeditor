@@ -3110,13 +3110,13 @@ _extend(KCmd, {
 		});
 	},
 	forecolor : function(val) {
-		return this.wrap('<span style="color:' + val + ';"></span>').select();
+		return this.wrap('<font style="color:' + val + ';"></font>').select();
 	},
 	hilitecolor : function(val) {
 		return this.wrap('<span style="background-color:' + val + ';"></span>').select();
 	},
 	fontsize : function(val) {
-		return this.wrap('<span style="font-size:' + val + ';"></span>').select();
+		return this.wrap('<font style="font-size:' + val + ';"></font>').select();
 	},
 	fontname : function(val) {
 		return this.fontfamily(val);
