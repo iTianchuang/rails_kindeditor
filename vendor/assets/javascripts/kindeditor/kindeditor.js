@@ -3187,7 +3187,7 @@ _extend(KCmd, {
 	insertimage : function(url, title, width, height, border, align) {
 		title = _undef(title, '');
 		border = _undef(border, 0);
-		var html = '<img src="' + _escape(url) + '" data-ke-src="' + _escape(url) + '" ';
+		var html = '<img class="android_default" src="' + _escape(url) + '" data-ke-src="' + _escape(url) + '" ';
 		if (width) {
 			html += 'width="' + _escape(width) + '" ';
 		}
